@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic feed in the trumpstruth.org RSS format, for tests. The text is made up;
+     the structure (namespaces, tags, boilerplate paragraphs) copies the real feed. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:truth="https://truthsocial.com/ns" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:archive="https://www.trumpstruth.org/rss-extensions">
+    <channel>
+        <title><![CDATA[Test feed]]></title>
+        <link>https://www.trumpstruth.org</link>
+
+        <item>
+            <title><![CDATA[Test original post]]></title>
+            <link>https://www.trumpstruth.org/statuses/1001</link>
+            <description><![CDATA[<p>First line of a test post &amp; more.<br />Second line.</p><p>Another paragraph.</p><p><a href="https://example.com/a.jpg">View image</a></p>]]></description>
+            <dc:creator>Donald J. Trump</dc:creator>
+            <guid>https://www.trumpstruth.org/statuses/1001</guid>
+            <pubDate>Sat, 21 Jun 2025 23:50:59 +0000</pubDate>
+            <truth:originalUrl>https://truthsocial.com/@realDonaldTrump/114724035567288320</truth:originalUrl>
+            <truth:originalId>114724035567288320</truth:originalId>
+            <archive:postType>original</archive:postType>
+            <archive:removed>false</archive:removed>
+            <media:content url="https://example.com/a.jpg" medium="image">
+                <media:thumbnail url="https://example.com/a_small.jpg" />
+            </media:content>
+        </item>
+
+        <item>
+            <title><![CDATA[Quote post from June 22, 2025]]></title>
+            <link>https://www.trumpstruth.org/statuses/1002</link>
+            <description><![CDATA[<p>My comment on the quoted post.</p><p>Quoted <a href="https://www.trumpstruth.org/statuses/1000">Some Account</a></p><blockquote><p>The quoted words.</p><p><a href="https://example.com/v.mp4">View video</a></p></blockquote>]]></description>
+            <dc:creator>Donald J. Trump</dc:creator>
+            <guid>https://www.trumpstruth.org/statuses/1002</guid>
+            <pubDate>Sun, 22 Jun 2025 13:05:10 +0000</pubDate>
+            <truth:originalUrl>https://truthsocial.com/@realDonaldTrump/114727158448128000</truth:originalUrl>
+            <truth:originalId>114727158448128000</truth:originalId>
+            <archive:postType>quote</archive:postType>
+            <archive:removed>false</archive:removed>
+            <media:content url="https://example.com/v.mp4" medium="video"></media:content>
+            <media:content url="https://example.com/b.jpg" medium="image"></media:content>
+            <archive:reference type="quote" originalId="114724035567288320">
+                <archive:link>https://www.trumpstruth.org/statuses/1000</archive:link>
+                <archive:originalUrl>https://truthsocial.com/@someone/114724035567288320</archive:originalUrl>
+                <dc:creator>Some Account</dc:creator>
+                <archive:publishedAt>2025-06-21T23:50:59+00:00</archive:publishedAt>
+            </archive:reference>
+        </item>
+
+        <item>
+            <title><![CDATA[RT @realDonaldTrumpReposted words.]]></title>
+            <link>https://www.trumpstruth.org/statuses/1003</link>
+            <description><![CDATA[<p>RT <span class="h-card"><a href="https://truthsocial.com/@realDonaldTrump" rel="nofollow">@<span>realDonaldTrump</span></a></span>Reposted words.</p><p>Reposted <a href="https://www.trumpstruth.org/statuses/999">Donald J. Trump</a></p><blockquote><p>Reposted words.</p></blockquote><p>Removed from Truth Social. Removal detected 2026-04-02T00:43:22+00:00.</p>]]></description>
+            <dc:creator>Donald J. Trump</dc:creator>
+            <guid>https://www.trumpstruth.org/statuses/1003</guid>
+            <pubDate>Mon, 30 Mar 2026 01:35:13 +0000</pubDate>
+            <truth:originalUrl>https://truthsocial.com/@realDonaldTrump/116315554694692864</truth:originalUrl>
+            <truth:originalId>116315554694692864</truth:originalId>
+            <archive:postType>repost</archive:postType>
+            <archive:removed>true</archive:removed>
+            <archive:removalDetectedAt>2026-04-02T00:43:22+00:00</archive:removalDetectedAt>
+            <archive:removalTimeApproximate>false</archive:removalTimeApproximate>
+            <archive:reference type="repost" originalId="116315443560448000">
+                <archive:link>https://www.trumpstruth.org/statuses/999</archive:link>
+                <archive:originalUrl>https://truthsocial.com/@realDonaldTrump/116315443560448000</archive:originalUrl>
+                <dc:creator>Donald J. Trump</dc:creator>
+                <archive:publishedAt>2026-03-30T01:06:58+00:00</archive:publishedAt>
+                <media:content url="https://example.com/c.jpg" medium="image"></media:content>
+            </archive:reference>
+        </item>
+
+        <item>
+            <title><![CDATA[Text only]]></title>
+            <link>https://www.trumpstruth.org/statuses/1004</link>
+            <description><![CDATA[<p>Plain post with &quot;quotes&quot; and   extra   spaces.</p>]]></description>
+            <dc:creator>Donald J. Trump</dc:creator>
+            <guid>https://www.trumpstruth.org/statuses/1004</guid>
+            <pubDate>Mon, 09 Mar 2026 14:02:44 +0000</pubDate>
+            <truth:originalUrl>https://truthsocial.com/@realDonaldTrump/116199585539686400</truth:originalUrl>
+            <truth:originalId>116199585539686400</truth:originalId>
+            <archive:postType>original</archive:postType>
+            <archive:removed>false</archive:removed>
+        </item>
+    </channel>
+</rss>

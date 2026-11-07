@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/raw/
+data/processed/
+*.part
+
+# full post text, regenerate with: python -m src.agreement --sheet
+labels/human_check_sheet.csv

@@ -1,0 +1,17 @@
+check,sample,statistic,n,value_bps,p_one_sided
+beta from 30-min returns (beta 1.042),"regular hours, all",signed mean (H1),18,-7.472005252209802,0.9215
+beta from 30-min returns (beta 1.042),"regular hours, new info",signed mean (H1),15,-9.73799140149532,0.9488
+beta from 30-min returns (beta 1.042),"regular hours, phase1",signed mean (H1),3,-3.7726946876637917,0.6252
+beta from 30-min returns (beta 1.042),"regular hours, phase2",signed mean (H1),15,-8.211867365119003,0.924
+beta from 30-min returns (beta 1.042),30 min BEFORE post,signed mean (H1),16,-5.477582964770892,0.8455
+beta from 30-min returns (beta 1.042),"off hours, next open",escalating minus de-escalating,35,35.15742297109155,0.1706
+placebo matched on hour of day,"regular hours, all",signed mean (H1),18,-7.687593621279341,0.9193
+upper bound on H1 effect,placebo noise (SE 6.0 bp),one-sided 95% bound,18,2.1813791500008524,
+upper bound on H1 effect,"events' own spread, t(17) (SE 7.5 bp)",one-sided 95% bound,18,5.317627586877518,
+upper bound on H1 effect,bootstrap of the 18 events,95th percentile of mean,18,3.960436822910118,
+power,placebo noise,effect detected 80% of the time,18,14.918354183104261,
+power,events' own spread,effect detected 80% of the time,18,18.589033418074287,
+if the true effect were +10 bp,events' own spread,chance of a result this low,18,,0.00894
+exploratory: H2 on off-hours events,phase1,signed overnight AR,15,31.185973466797783,
+exploratory: H2 on off-hours events,phase2,signed overnight AR,20,9.94612963045343,
+exploratory: H2 on off-hours events,phase1 minus phase2,difference,35,21.239843836344352,0.2732
